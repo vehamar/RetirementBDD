@@ -52,14 +52,3 @@ def input_year_month2(retire2):
 @then("user will receive message Please enter a valid month")
 def retire_date2(retire2):
     assert retire2.retireAge() == "Only months 1-12 are valid month"
-
-
-@given("year of birth of 1940 AND a birth month of July")
-def retire3():
-    return Retirement(1940, 7)
-@when("user presses the return key")
-def input_year_month2(retire3):
-    retire3.retireYear(65, 6)
-@then("user will receive message Your full retirement age is 65 and 6 months, this will be in January of 2006")
-def retire_date2(retire3):
-    assert retire3.retireYear(65, 6) == ('January', 2006)
