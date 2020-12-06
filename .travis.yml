@@ -1,9 +1,0 @@
-language: python
-python:
- - "3.6"
- - "nightly"
-install:
- - "pip install pytest"
- - "pip install pytest-bdd"
- - "pip install requests"
-script: pytest
